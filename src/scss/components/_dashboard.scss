@@ -1,0 +1,66 @@
+.body-dashboard {
+  background-image: url("../assets/images/bg-dashboard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.logo-metric {
+  width: fit-content;
+  margin: auto;
+  padding-top: 55px;
+  margin-bottom: 60px;
+}
+
+.title-metric {
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5,
+    -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5,
+    -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+
+.title-bg {
+  color: $theme;
+}
+
+.info-item__sevice {
+  color: $theme;
+  text-align: center;
+}
+
+.item-metric__sevice {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 4px 4px 20px #00b3ff;
+  border-radius: 10px;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    transform: translateY(-20px) scale(1.1);
+
+    .btn-theme {
+      background: linear-gradient(
+        143.87deg,
+        #ff9308 19.23%,
+        #ff7700 32.96%,
+        #ff4d0e 59.19%,
+        #f44336 81.67%
+      );
+    }
+  }
+}
+
+.groups-sevice__metric {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

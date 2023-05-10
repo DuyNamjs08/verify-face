@@ -1,0 +1,112 @@
+@import "components/variables.scss";
+@import "components/mixin.scss";
+@import "components/base.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/loading.scss";
+@import "components/dashboard.scss";
+@import "components/face-matching.scss";
+
+.container {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-theme {
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  width: fit-content;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  background: linear-gradient(
+    143.87deg,
+    #2b7fff 19.23%,
+    #0065ff 32.96%,
+    #0047b3 59.19%,
+    #003e9c 81.67%
+  );
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(
+      to right,
+      #f5ce62,
+      #e43603,
+      #fa7199,
+      #e85a19
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+  }
+}
+
+.btn-backoff {
+  display: flex;
+  width: fit-content;
+  border-bottom: solid 1px #ffffff;
+  font-size: 24px;
+  margin-left: auto;
+  margin-bottom: 70px;
+  color: #ffffff;
+}
+
+.btn-white {
+  display: flex;
+  width: fit-content;
+  padding: 15px 60px;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.2s;
+  border-radius: 1000px;
+  color: $theme;
+  background-color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $theme;
+  }
+}
+
+.btn-theme__second {
+  display: flex;
+  width: fit-content;
+  padding: 5px 15px;
+  min-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  border-radius: 1000px;
+  color: #FFFFFF;
+  background-color: #0065FF;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  svg {
+    margin:0px 5px;
+    font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $theme;
+  }
+}
+
+.title-theme {
+  color: $theme;
+}
